@@ -1,0 +1,4 @@
+# .streamlit/config.toml
+
+[server]
+maxUploadSize = 500 # This sets the limit to 500 MB

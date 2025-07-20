@@ -1,0 +1,18 @@
+# Specify the Docker Compose file format version
+version: '3.8'
+
+# Define the services (containers) for your app
+services:
+  # This is the custom name for your streamlit service
+  streamlit_app:
+    # This is the key part: it tells Compose to build an image
+    # using the Dockerfile in the current directory (.)
+    build: .
+    # Map port 8501 on your host machine to port 8501 in the container
+    ports:
+      - "8501:8501"
+    # (Optional but recommended for development)
+    # Mount the current directory into the container's /app directory.
+    # This lets you see code changes without rebuilding the image.
+    volumes:
+      - .:/app

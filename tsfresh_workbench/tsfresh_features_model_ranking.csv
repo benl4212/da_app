@@ -1,0 +1,10 @@
+model,rank,feature,importance
+IsolationForest,1,value__quantile__q_0.1,0.0958434177863441
+IsolationForest,2,value__quantile__q_0.2,0.06930527355154201
+IsolationForest,3,"value__cwt_coefficients__coeff_11__w_5__widths_(2, 5, 10, 20)",0.056494780231572075
+OneClassSVM,1,value__quantile__q_0.1,0.10588307812738339
+OneClassSVM,2,value__quantile__q_0.4,0.07208027248549531
+OneClassSVM,3,value__quantile__q_0.2,0.06246149993799386
+LOF,1,"value__fft_coefficient__attr_""imag""__coeff_52",0.029744258631896562
+LOF,2,"value__change_quantiles__f_agg_""mean""__isabs_False__qh_0.2__ql_0.0",0.02879279259281177
+LOF,3,value__quantile__q_0.4,0.02541465131724706
