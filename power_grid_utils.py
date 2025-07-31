@@ -21,6 +21,8 @@
 
     6.    ACTIVSg10k_load_time_series_MW
         | Date | Time | Num Load | Total MW Load | Total Mvar Load | Bus 10001 #1 MW - Bus 80084 #1 MW
+        
+
 '''
 
 import pandas as pd

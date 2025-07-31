@@ -1,0 +1,102 @@
+# Safety Instrumented System (SIS) Tag Directory,,,,,,,,,
+,,,,,,,,,
+# Description: This directory contains tags for the Safety Instrumented System (SIS),,,,,,,,,
+# which provides an independent protection layer for the LNG process.,,,,,,,,,
+,,,,,,,,,
+# SIS Tagging Philosophy:,,,,,,,,,
+# PST, LST, TST, GDT: Safety Transmitters (2oo3 Voted: A, B, C),,,,
+# PSHH, LSHH, TSHH, GSHH: Voted trip logic output (BOOL),,,,,,
+# PDA: Process Deviation Alarm between redundant transmitters (BOOL),,,,,,,,,
+# SXV: Safety Shutdown Valve / Final Element (BOOL),,,,,,,,,
+# SAH/SAL: Safety Alarm indicating a SIF has been activated (BOOL),,,,,,,,,
+# EHS: Emergency Hand Switch / E-Stop Pushbutton (BOOL),,,,,,,,,
+,,,,,,,,,
+TagName,Description,Unit,D_Type,LowLim,HighLim,LL_SP,L_SP,H_SP,HH_SP
+,,,,,,,,,
+# SIF-100: Prevent Over-pressurization of Plant Inlet,,,,,,,,,
+# Subsystem: 100 - Filtration, Metering, and Regulation,,,,,,,
+PST-101A,Inlet Header Safety Pressure Transmitter A (2oo3),bar,REAL,0,120,-,-,-,95
+PST-101B,Inlet Header Safety Pressure Transmitter B (2oo3),bar,REAL,0,120,-,-,-,95
+PST-101C,Inlet Header Safety Pressure Transmitter C (2oo3),bar,REAL,0,120,-,-,-,95
+PSHH-101,Inlet Header Pressure High-High (Voted 2oo3 Logic),Trip,BOOL,0,1,-,-,-,-
+PDA-101,Pressure Transmitter Deviation Alarm (PST-101 A/B/C),Alarm,BOOL,0,1,-,-,-,-
+SXV-101,Inlet Emergency Shutdown Valve (ESD),Status,BOOL,0,1,-,-,-,-
+SAH-101,SIF-100 Activated Alarm (High Inlet Pressure),Alarm,BOOL,0,1,-,-,-,-
+,,,,,,,,,
+# SIF-200: Prevent Over-pressurization of Acid Gas Removal Unit,,,,,,,,,
+# Subsystem: 200 - Acid Gas Removal,,,,,,,,,
+PST-205A,Amine Contactor Safety Pressure Transmitter A (2oo3),bar,REAL,0,120,-,-,-,98
+PST-205B,Amine Contactor Safety Pressure Transmitter B (2oo3),bar,REAL,0,120,-,-,-,98
+PST-205C,Amine Contactor Safety Pressure Transmitter C (2oo3),bar,REAL,0,120,-,-,-,98
+PSHH-205,Amine Contactor Pressure High-High (Voted 2oo3 Logic),Trip,BOOL,0,1,-,-,-,-
+PDA-205,Pressure Transmitter Deviation Alarm (PST-205 A/B/C),Alarm,BOOL,0,1,-,-,-,-
+SXV-201,Feed Gas to Amine Contactor ESD Valve,Status,BOOL,0,1,-,-,-,-
+SAH-205,SIF-200 Activated Alarm (High Contactor Pressure),Alarm,BOOL,0,1,-,-,-,-
+,,,,,,,,,
+# SIF-350: Prevent Over-pressure in Liquefaction Compressors,,,,,,,,,
+# Subsystem: 350 - C3MR Liquefaction,,,,,,,,,
+PST-354A,MR Compressor Suction Drum Safety Pressure A (2oo3),bar,REAL,0,40,-,-,-,35
+PST-354B,MR Compressor Suction Drum Safety Pressure B (2oo3),bar,REAL,0,40,-,-,-,35
+PST-354C,MR Compressor Suction Drum Safety Pressure C (2oo3),bar,REAL,0,40,-,-,-,35
+PSHH-354,MR Compressor Suction Drum Pressure High-High (Voted),Trip,BOOL,0,1,-,-,-,-
+PDA-354,Pressure Transmitter Deviation Alarm (PST-354 A/B/C),Alarm,BOOL,0,1,-,-,-,-
+SAH-354,SIF-350 Activated Alarm (High MR Suction Pressure),Alarm,BOOL,0,1,-,-,-,-
+,,,,,,,,,
+# SIF-401: Prevent LNG Storage Tank Overfill,,,,,,,,,
+# Subsystem: 400 - LNG Storage & Loading,,,,,,,,,
+LST-401A,LNG Storage Tank Safety Level Transmitter A (2oo3),%,REAL,0,100,-,-,-,95
+LST-401B,LNG Storage Tank Safety Level Transmitter B (2oo3),%,REAL,0,100,-,-,-,95
+LST-401C,LNG Storage Tank Safety Level Transmitter C (2oo3),%,REAL,0,100,-,-,-,95
+LSHH-401,LNG Tank Level High-High (Voted 2oo3 Logic),Trip,BOOL,0,1,-,-,-,-
+LDA-401,Level Transmitter Deviation Alarm (LST-401 A/B/C),Alarm,BOOL,0,1,-,-,-,-
+SXV-359,MCHE Outlet to LNG Storage ESD Valve,Status,BOOL,0,1,-,-,-,-
+SAH-401,SIF-401 Activated Alarm (High LNG Tank Level),Alarm,BOOL,0,1,-,-,-,-
+,,,,,,,,,
+# SIF-402: Prevent LNG Storage Tank Over-pressurization,,,,,,,,,
+# Subsystem: 400 - LNG Storage & Loading,,,,,,,,,
+PST-402A,LNG Storage Tank Safety Pressure Transmitter A (2oo3),mbar,REAL,0,500,-,-,-,450
+PST-402B,LNG Storage Tank Safety Pressure Transmitter B (2oo3),mbar,REAL,0,500,-,-,-,450
+PST-402C,LNG Storage Tank Safety Pressure Transmitter C (2oo3),mbar,REAL,0,500,-,-,-,450
+PSHH-402,LNG Tank Pressure High-High (Voted 2oo3 Logic),Trip,BOOL,0,1,-,-,-,-
+PDA-402,Pressure Transmitter Deviation Alarm (PST-402 A/B/C),Alarm,BOOL,0,1,-,-,-,-
+SAH-402,SIF-402 Activated Alarm (High LNG Tank Pressure),Alarm,BOOL,0,1,-,-,-,-
+,,,,,,,,,
+# SIF-700: Prevent Over-pressurization of Fractionation Column,,,,,,,,,
+# Subsystem: 700 - Fractionation Unit,,,,,,,,,
+PST-721A,Fractionation Column Safety Pressure Transmitter A (2oo3),bar,REAL,0,30,-,-,-,28
+PST-721B,Fractionation Column Safety Pressure Transmitter B (2oo3),bar,REAL,0,30,-,-,-,28
+PST-721C,Fractionation Column Safety Pressure Transmitter C (2oo3),bar,REAL,0,30,-,-,-,28
+PSHH-721,Fractionation Column Pressure High-High (Voted),Trip,BOOL,0,1,-,-,-,-
+PDA-721,Pressure Transmitter Deviation Alarm (PST-721 A/B/C),Alarm,BOOL,0,1,-,-,-,-
+SXV-701,Feed to Fractionation Column ESD Valve,Status,BOOL,0,1,-,-,-,-
+SAH-721,SIF-700 Activated Alarm (High Column Pressure),Alarm,BOOL,0,1,-,-,-,-
+,,,,,,,,,
+# SIF-800: Detect Flammable Gas in H2 Production Area,,,,,,,,,
+# Subsystem: 800 - H2 Storage & SMR,,,,,,,,,
+GDT-801A,H2 Area Combustible Gas Detector A (2oo3),% LEL,REAL,0,100,-,-,20,40
+GDT-801B,H2 Area Combustible Gas Detector B (2oo3),% LEL,REAL,0,100,-,-,20,40
+GDT-801C,H2 Area Combustible Gas Detector C (2oo3),% LEL,REAL,0,100,-,-,20,40
+GSH-801,H2 Area Gas Detection High Alarm (Voted 2oo3),Alarm,BOOL,0,1,-,-,-,-
+GSHH-801,H2 Area Gas Detection High-High Trip (Voted 2oo3),Trip,BOOL,0,1,-,-,-,-
+GDA-801,Gas Detector Deviation Alarm (GDT-801 A/B/C),Alarm,BOOL,0,1,-,-,-,-
+SXV-801,H2 Storage Outlet ESD Valve,Status,BOOL,0,1,-,-,-,-
+SXV-810,SMR Feed Gas ESD Valve,Status,BOOL,0,1,-,-,-,-
+SAH-801,SIF-800 Activated Alarm (Gas Detected),Alarm,BOOL,0,1,-,-,-,-
+,,,,,,,,,
+# SIF-900: Prevent H2 Fuel Cell Over-temperature,,,,,,,,,
+# Subsystem: 900 - H2 Fuel Stack & Power System,,,,,,,,,
+TST-920A,Fuel Cell Stack Safety Temperature A (2oo3),degC,REAL,0,800,-,-,-,750
+TST-920B,Fuel Cell Stack Safety Temperature B (2oo3),degC,REAL,0,800,-,-,-,750
+TST-920C,Fuel Cell Stack Safety Temperature C (2oo3),degC,REAL,0,800,-,-,-,750
+TSHH-920,Fuel Cell Stack Temp High-High (Voted 2oo3 Logic),Trip,BOOL,0,1,-,-,-,-
+TDA-920,Temp Transmitter Deviation Alarm (TST-920 A/B/C),Alarm,BOOL,0,1,-,-,-,-
+SXV-901,H2 Feed to Fuel Cell ESD Valve,Status,BOOL,0,1,-,-,-,-
+SAH-920,SIF-900 Activated Alarm (High Fuel Cell Temperature),Alarm,BOOL,0,1,-,-,-,-
+,,,,,,,,,
+# Plant-Wide Emergency Shutdown (ESD) Pushbuttons,,,,,,,,,
+EHS-001,Master Plant Emergency Shutdown (Main Control Room),E-Stop,BOOL,0,1,-,-,-,-
+EHS-100,Gas Inlet Area Emergency Shutdown,E-Stop,BOOL,0,1,-,-,-,-
+EHS-350,Liquefaction Area Emergency Shutdown,E-Stop,BOOL,0,1,-,-,-,-
+EHS-400,LNG Storage & Loading Area Emergency Shutdown,E-Stop,BOOL,0,1,-,-,-,-
+EHS-800,H2 Production & Storage Area Emergency Shutdown,E-Stop,BOOL,0,1,-,-,-,-
+ESD-001,Plant-Wide Shutdown Initiated Alarm,Alarm,BOOL,0,1,-,-,-,-

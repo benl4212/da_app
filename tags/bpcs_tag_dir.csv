@@ -1,0 +1,400 @@
+﻿TagName,Description,Unit,D_Type,LowLim,HighLim,LL_SP,L_SP,H_SP,HH_SP
+PG-100,Inlet Gas Header Pressure Gauge,bar,REAL,0,100,-,-,-,-
+TG-100,Inlet Gas Header Temperature Gauge,degC,REAL,0,100,-,-,-,-
+HV-100A,Duty Filter Inlet Isolation,Status,BOOL,0,1,-,-,-,-
+HV-100B,Duty Filter Inlet Bypass,Status,BOOL,0,1,-,-,-,-
+HV-101A,Standby Filter Inlet Isolation,Status,BOOL,0,1,-,-,-,-
+HV-101B,Standby Filter Inlet Bypass,Status,BOOL,0,1,-,-,-,-
+DPT-101,Standby Filter Differential Pressure,kPa,REAL,0,50,-,-,40,45
+DPAH-101,Standby Filter High DP Alarm,Alarm,BOOL,0,1,-,-,-,-
+DPAHH-101,Standby Filter High-High DP Alarm,Alarm,BOOL,0,1,-,-,-,-
+PG-101,Standby Filter Outlet Pressure Gauge,bar,REAL,0,100,-,-,-,-
+HV-102,Standby Filter Drain Isolation,Status,BOOL,0,1,-,-,-,-
+RO-102,Standby Filter Drain Restriction Orifice,N/A,N/A,N/A,N/A,-,-,-,-
+FE-103,Duty Ultrasonic Flowmeter,N/A,N/A,N/A,N/A,-,-,-,-
+FT-103,Duty Gas Flow,m3/hr,REAL,0,5000,-,-,-,-
+FE-104,Standby Ultrasonic Flowmeter,N/A,N/A,N/A,N/A,-,-,-,-
+FT-104,Standby Gas Flow Transmitter,m3/hr,REAL,0,5000,-,500,4800,-
+FAL-104,Standby Gas Flow Low Alarm,Alarm,BOOL,0,1,-,-,-,-
+FAH-104,Standby Gas Flow High Alarm,Alarm,BOOL,0,1,-,-,-,-
+PT-104,Standby Metering Pressure Transmitter,bar,REAL,54,62,-,55,61,-
+PAL-104,Standby Metering Pressure Low Alarm,Alarm,BOOL,0,1,-,-,-,-
+PAH-104,Standby Metering Pressure High Alarm,Alarm,BOOL,0,1,-,-,-,-
+PI-104,Standby Metering Pressure Indicator (PLC),bar,REAL,54,62,-,-,-,-
+TT-104,Standby Metering Temperature Transmitter,degC,REAL,35,45,-,36,44,-
+TAL-104,Standby Metering Temp Low Alarm,Alarm,BOOL,0,1,-,-,-,-
+TAH-104,Standby Metering Temp High Alarm,Alarm,BOOL,0,1,-,-,-,-
+TI-104,Standby Metering Temp Indicator (PLC),degC,REAL,35,45,-,-,-,-
+FY-104,Standby Flow Compensation Calculation,kg/s,REAL,0,150,-,-,-,-
+XV-105-CMD,Duty Regulator Isolation Valve Command,On/Off,BOOL,0,1,-,-,-,-
+PCV-106,Duty Line Pressure Control Valve,%,REAL,0,100,-,-,-,-
+XV-107-CMD,Standby Regulator Isolation Valve Command,On/Off,BOOL,0,1,-,-,-,-
+UZLL-107,Standby Isolation Valve Position Closed,Status,BOOL,0,1,-,-,-,-
+UZLH-107,Standby Isolation Valve Position Open,Status,BOOL,0,1,-,-,-,-
+PCV-108,Standby Line Pressure Control Valve,%,REAL,0,100,-,-,-,-
+PZLL-108,Standby PCV Position Closed,Status,BOOL,0,1,-,-,-,-
+PZLH-108,Standby PCV Position Open,Status,BOOL,0,1,-,-,-,-
+PT-109,Final Outlet Pressure Transmitter,bar,REAL,54,62,54.5,55,61,61.5
+PALL-109,Final Outlet Pressure Low-Low Alarm,Alarm,BOOL,0,1,-,-,-,-
+PAL-109,Final Outlet Pressure Low Alarm,Alarm,BOOL,0,1,-,-,-,-
+PAH-109,Final Outlet Pressure High Alarm,Alarm,BOOL,0,1,-,-,-,-
+PAHH-109,Final Outlet Pressure High-High Alarm,Alarm,BOOL,0,1,-,-,-,-
+PI-109,Final Outlet Pressure Indicator (PLC),bar,REAL,54,62,-,-,-,-
+PG-109,Final Outlet Pressure Gauge,bar,REAL,0,100,-,-,-,-
+TT-109,Final Outlet Temperature Transmitter,degC,REAL,35,45,35.5,36,44,44.5
+TALL-109,Final Outlet Temp Low-Low Alarm,Alarm,BOOL,0,1,-,-,-,-
+TAL-109,Final Outlet Temp Low Alarm,Alarm,BOOL,0,1,-,-,-,-
+TAH-109,Final Outlet Temp High Alarm,Alarm,BOOL,0,1,-,-,-,-
+TAHH-109,Final Outlet Temp High-High Alarm,Alarm,BOOL,0,1,-,-,-,-
+TI-109,Final Outlet Temperature Indicator (PLC),degC,REAL,35,45,-,-,-,-
+TG-109,Final Outlet Temperature Gauge,degC,REAL,0,100,-,-,-,-
+AT-201,Inlet Gas H2S Analyzer,ppm,REAL,0,50,-,-,40,45
+AAH-201,Inlet Gas H2S High Alarm,Alarm,BOOL,0,1,-,-,-,-
+AAHH-201,Inlet Gas H2S High-High Alarm,Alarm,BOOL,0,1,-,-,-,-
+FT-201,Inlet Gas Flow Transmitter,m3/hr,REAL,0,50000,-,-,-,-
+PT-201,Inlet Gas Pressure Transmitter,bar,REAL,50,70,54,55,68,69
+AT-202,Sweet Gas H2S Analyzer,ppm,REAL,0,10,-,-,4,5
+AAH-202,Sweet Gas H2S High Alarm,Alarm,BOOL,0,1,-,-,-,-
+AAHH-202,Sweet Gas H2S High-High Alarm,Alarm,BOOL,0,1,-,-,-,-
+LT-201,Contactor Sump Level Transmitter,%,REAL,0,100,10,20,80,90
+LALL-201,Contactor Sump Level Low-Low Alarm,Alarm,BOOL,0,1,-,-,-,-
+LAL-201,Contactor Sump Level Low Alarm,Alarm,BOOL,0,1,-,-,-,-
+LAH-201,Contactor Sump Level High Alarm,Alarm,BOOL,0,1,-,-,-,-
+LAHH-201,Contactor Sump Level High-High Alarm,Alarm,BOOL,0,1,-,-,-,-
+TT-201,Contactor Top Temperature,degC,REAL,0,100,-,-,-,-
+P-201A,Lean Amine Pump A,Status,BOOL,0,1,-,-,-,-
+P-201B,Lean Amine Pump B (Standby),Status,BOOL,0,1,-,-,-,-
+FT-203,Lean Amine to Contactor Flow,m3/hr,REAL,0,1000,-,-,-,-
+TT-203,Lean Amine Temperature,degC,REAL,0,100,-,45,60,-
+LT-202,Regenerator Sump Level Transmitter,%,REAL,0,100,10,20,80,90
+LALL-202,Regenerator Sump Level Low-Low Alarm,Alarm,BOOL,0,1,-,-,-,-
+LAH-202,Regenerator Sump Level High Alarm,Alarm,BOOL,0,1,-,-,-,-
+TT-202,Regenerator Bottoms Temperature,degC,REAL,100,150,115,120,135,140
+TALL-202,Regenerator Bottoms Temp Low-Low Alarm,Alarm,BOOL,0,1,-,-,-,-
+TAHH-202,Regenerator Bottoms Temp High-High Alarm,Alarm,BOOL,0,1,-,-,-,-
+TIC-202,Regenerator Bottoms Temperature Controller,%,REAL,0,100,-,-,-,-
+TCV-202,Reboiler Steam Control Valve,%,REAL,0,100,-,-,-,-
+PT-202,Regenerator Top Pressure Transmitter,bar,REAL,0,5,-,1.5,2,2.2
+LT-203,Reflux Accumulator Level Transmitter,%,REAL,0,100,10,20,80,90
+LALL-203,Reflux Accumulator Level Low-Low Alarm,Alarm,BOOL,0,1,-,-,-,-
+LAHH-203,Reflux Accumulator Level High-High Alarm,Alarm,BOOL,0,1,-,-,-,-
+DPT-210,Inlet Filter Coalescer DP,kPa,REAL,0,100,-,-,70,80
+DPAH-210,Inlet Filter Coalescer High DP Alarm,Alarm,BOOL,0,1,-,-,-,-
+DPAHH-210,Inlet Filter Coalescer High-High DP Alarm,Alarm,BOOL,0,1,-,-,-,-
+LT-210,Inlet Filter Coalescer Sump Level,%,REAL,0,100,-,-,75,85
+LAH-210,Inlet Filter Coalescer High Level Alarm,Alarm,BOOL,0,1,-,-,-,-
+LAHH-210,Inlet Filter Coalescer High-High Level Alarm,Alarm,BOOL,0,1,-,-,-,-
+XV-211A1-CMD,Bed A Inlet Valve Command,On/Off,BOOL,0,1,-,-,-,-
+XV-211A2-CMD,Bed A Outlet Valve Command,On/Off,BOOL,0,1,-,-,-,-
+XV-211B1-CMD,Bed B Inlet Valve Command,On/Off,BOOL,0,1,-,-,-,-
+XV-211B2-CMD,Bed B Outlet Valve Command,On/Off,BOOL,0,1,-,-,-,-
+XV-211C1-CMD,Bed C Inlet Valve Command,On/Off,BOOL,0,1,-,-,-,-
+XV-211C2-CMD,Bed C Outlet Valve Command,On/Off,BOOL,0,1,-,-,-,-
+DPT-211A,Bed A Differential Pressure,kPa,REAL,0,100,-,-,70,80
+DPT-211B,Bed B Differential Pressure,kPa,REAL,0,100,-,-,70,80
+DPT-211C,Bed C Differential Pressure,kPa,REAL,0,100,-,-,70,80
+TT-211A,Bed A Outlet Temperature,degC,REAL,20,60,-,-,50,55
+TT-211B,Bed B Outlet Temperature,degC,REAL,20,60,-,-,50,55
+TT-211C,Bed C Outlet Temperature,degC,REAL,20,60,-,-,50,55
+TAH-211,Bed Outlet High Temp Alarm (Common),Alarm,BOOL,0,1,-,-,-,-
+TAHH-211,Bed Outlet High-High Temp Alarm (Common),Alarm,BOOL,0,1,-,-,-,-
+TT-215,Regen Gas Heater Outlet Temperature,degC,REAL,200,350,-,280,320,-
+TIC-215,Regen Gas Heater Outlet Temp Controller,%,REAL,0,100,-,-,-,-
+TCV-215,Regen Gas Heater Fuel Gas Valve,%,REAL,0,100,-,-,-,-
+LT-217,Regen Gas Separator Level,%,REAL,0,100,10,20,80,90
+PT-217,Regen Gas Separator Pressure,bar,REAL,40,60,-,-,-,-
+DPT-212,Mercury Guard Bed DP,kPa,REAL,0,100,-,-,70,80
+DPAH-212,Mercury Guard Bed High DP Alarm,Alarm,BOOL,0,1,-,-,-,-
+AT-219,Outlet Gas Water Analyzer,ppmv,REAL,0,1,-,-,0.5,1
+AAH-219,Outlet Gas Water High Alarm,Alarm,BOOL,0,1,-,-,-,-
+AAHH-219,Outlet Gas Water High-High Alarm,Alarm,BOOL,0,1,-,-,-,-
+AT-220,Outlet Gas Mercury Analyzer,ng/m3,REAL,0,20,-,-,10,15
+AAH-220,Outlet Gas Mercury High Alarm,Alarm,BOOL,0,1,-,-,-,-
+TT-301,NG Feed to HHP Chiller Temperature,degC,REAL,0,50,-,-,26,28
+TT-302,NG Feed to HP Chiller Temperature,degC,REAL,0,40,-,-,20,22
+TAH-302,NG Feed to HP Chiller High Temp Alarm,Alarm,BOOL,0,1,-,-,-,-
+LT-310,HHP Chiller Level Transmitter,%,REAL,0,100,10,20,80,90
+LIC-310,HHP Chiller Level Controller,%,REAL,0,100,-,-,-,-
+LCV-310,HHP Chiller Level Control Valve,%,REAL,0,100,-,-,-,-
+TT-303,NG Feed to MP Chiller Temperature,degC,REAL,-20,20,-,-,1,3
+TAH-303,NG Feed to MP Chiller High Temp Alarm,Alarm,BOOL,0,1,-,-,-,-
+LT-311,HP Chiller Level Transmitter,%,REAL,0,100,10,20,80,90
+LIC-311,HP Chiller Level Controller,%,REAL,0,100,-,-,-,-
+LCV-311,HP Chiller Level Control Valve,%,REAL,0,100,-,-,-,-
+TT-304,NG Feed to LP Chiller Temperature,degC,REAL,-40,0,-,-,-18,-16
+TAH-304,NG Feed to LP Chiller High Temp Alarm,Alarm,BOOL,0,1,-,-,-,-
+LT-312,MP Chiller Level Transmitter,%,REAL,0,100,10,20,80,90
+LIC-312,MP Chiller Level Controller,%,REAL,0,100,-,-,-,-
+LCV-312,MP Chiller Level Control Valve,%,REAL,0,100,-,-,-,-
+TT-305,NG to Main Cryogenic Exchanger Temp,degC,REAL,-60,-20,-,-,-36,-35
+TAH-305,NG to Main Cryo Exchanger High Temp Alarm,Alarm,BOOL,0,1,-,-,-,-
+TAHH-305,NG to Main Cryo Exchanger High-High Temp Alarm,Alarm,BOOL,0,1,-,-,-,-
+LT-313,LP Chiller Level Transmitter,%,REAL,0,100,10,20,80,90
+LIC-313,LP Chiller Level Controller,%,REAL,0,100,-,-,-,-
+LCV-313,LP Chiller Level Control Valve,%,REAL,0,100,-,-,-,-
+ST-320,C3 Compressor Speed Transmitter,RPM,REAL,0,5000,-,-,-,-
+SIC-320,C3 Compressor Speed Controller,%,REAL,0,100,-,-,-,-
+TT-321,C3 Compressor Exhaust Temperature,degC,REAL,0,600,-,-,550,580
+TAHH-321,C3 Compressor Exhaust High-High Temp Alarm,Alarm,BOOL,0,1,-,-,-,-
+GT-320,Gas Turbine Driver Status,Status,BOOL,0,1,-,-,-,-
+PT-322,HHP Suction Drum Pressure,kPaa,REAL,600,700,620,630,690,700
+TT-322,HHP Suction Drum Temperature,degC,REAL,0,20,8,9,14,15
+LT-322,HHP Suction Drum Level Transmitter,%,REAL,0,100,10,20,80,90
+LAHH-322,HHP Suction Drum High-High Level Alarm,Alarm,BOOL,0,1,-,-,-,-
+PT-323,HP Suction Drum Pressure,kPaa,REAL,300,400,320,330,390,400
+TT-323,HP Suction Drum Temperature,degC,REAL,-10,10,-12,-10,0,2
+LT-323,HP Suction Drum Level Transmitter,%,REAL,0,100,10,20,80,90
+LAHH-323,HP Suction Drum High-High Level Alarm,Alarm,BOOL,0,1,-,-,-,-
+PT-324,MP Suction Drum Pressure,kPaa,REAL,150,250,160,170,220,230
+TT-324,MP Suction Drum Temperature,degC,REAL,-30,-10,-28,-27,-22,-20
+LT-324,MP Suction Drum Level Transmitter,%,REAL,0,100,10,20,80,90
+LAHH-324,MP Suction Drum High-High Level Alarm,Alarm,BOOL,0,1,-,-,-,-
+PT-325,LP Suction Drum Pressure,kPaa,REAL,80,120,90,95,110,115
+TT-325,LP Suction Drum Temperature,degC,REAL,-50,-30,-45,-43,-38,-37
+LT-325,LP Suction Drum Level Transmitter,%,REAL,0,100,10,20,80,90
+LAHH-325,LP Suction Drum High-High Level Alarm,Alarm,BOOL,0,1,-,-,-,-
+PT-328,C3 Condenser Outlet Pressure,kPaa,REAL,1300,1500,1350,1380,1450,1480
+TT-328,C3 Condenser Outlet Temperature,degC,REAL,20,60,35,38,45,48
+LT-329,C3 Accumulator Level Transmitter,%,REAL,0,100,10,20,80,90
+LALL-329,C3 Accumulator Low-Low Level Alarm,Alarm,BOOL,0,1,-,-,-,-
+LAHH-329,C3 Accumulator High-High Level Alarm,Alarm,BOOL,0,1,-,-,-,-
+FT-331,MR to HHP Chiller Flow Transmitter,m3/hr,REAL,0,10000,-,-,-,-
+FT-332,MR to HP Chiller Flow Transmitter,m3/hr,REAL,0,10000,-,-,-,-
+FT-333,MR to MP Chiller Flow Transmitter,m3/hr,REAL,0,10000,-,-,-,-
+FT-334,MR to LP Chiller Flow Transmitter,m3/hr,REAL,0,10000,-,-,-,-
+FT-341,MR from HHP Suction Drum Flow Transmitter,m3/hr,REAL,0,10000,-,-,-,-
+FT-342,MR from HP Suction Drum Flow Transmitter,m3/hr,REAL,0,10000,-,-,-,-
+FT-343,MR from MP Suction Drum Flow Transmitter,m3/hr,REAL,0,10000,-,-,-,-
+FT-344,MR from LP Suction Drum Flow Transmitter,m3/hr,REAL,0,10000,-,-,-,-
+LIT-401,Storage Tank Level Transmitter,%,REAL,0,100,5,10,85,90
+LALL-401,Storage Tank Level Alarm Low-Low,Alarm,BOOL,0,1,-,-,-,-
+LAL-401,Storage Tank Level Alarm Low,Alarm,BOOL,0,1,-,-,-,-
+LAH-401,Storage Tank Level Alarm High,Alarm,BOOL,0,1,-,-,-,-
+LAHH-401,Storage Tank Level Alarm High-High,Alarm,BOOL,0,1,-,-,-,-
+PT-402,Storage Tank Pressure Transmitter,barg,REAL,-0.5,2,-0.1,0.1,0.8,1
+PI-402,Storage Tank Pressure Indicator (PLC),barg,REAL,-0.5,2,-,-,-,-
+PALL-402,Storage Tank Pressure Alarm Low-Low,Alarm,BOOL,0,1,-,-,-,-
+PAL-402,Storage Tank Pressure Alarm Low,Alarm,BOOL,0,1,-,-,-,-
+PAH-402,Storage Tank Pressure Alarm High,Alarm,BOOL,0,1,-,-,-,-
+PAHH-402,Storage Tank Pressure Alarm High-High,Alarm,BOOL,0,1,-,-,-,-
+DPT-403,Storage Tank DP Level Transmitter,%,REAL,0,100,-,-,-,-
+TT-404A,Storage Tank Temp Element A (Bottom),degC,REAL,-170,-150,-,-168,-158,-
+TT-404B,Storage Tank Temp Element B (Middle),degC,REAL,-170,-150,-,-168,-158,-
+TT-404C,Storage Tank Temp Element C (Top),degC,REAL,-170,-150,-,-168,-158,-
+TR-404,Storage Tank Temperature Recorder (PLC),degC,REAL,-170,-150,-,-,-,-
+TAL-404,Storage Tank Temperature Alarm Low,Alarm,BOOL,0,1,-,-,-,-
+TAH-404,Storage Tank Temperature Alarm High,Alarm,BOOL,0,1,-,-,-,-
+PSV-405A,Tank Pressure Safety Valve A,Trip,BOOL,0,1,-,-,1.5,-
+PSV-405B,Tank Pressure Safety Valve B,Trip,BOOL,0,1,-,-,1.5,-
+PSV-405C,Tank Pressure Safety Valve C,Trip,BOOL,0,1,-,-,1.5,-
+PSV-405D,Tank Pressure Safety Valve D,Trip,BOOL,0,1,-,-,1.5,-
+XV-406-CMD,LNG Fill Isolation Valve Command,On/Off,BOOL,0,1,-,-,-,-
+XV-407-CMD,LNG Fill Emergency Shutdown Valve Command,On/Off,BOOL,0,1,-,-,-,-
+HC-407,ESD Valve Manual Controller,Status,BOOL,0,1,-,-,-,-
+P-408A-CMD,Pressure Build-Up Pump A Command,On/Off,BOOL,0,1,-,-,-,-
+P-408A-STATUS,Pressure Build-Up Pump A Running,Status,BOOL,0,1,-,-,-,-
+P-408B-CMD,Pressure Build-Up Pump B Command,On/Off,BOOL,0,1,-,-,-,-
+P-408B-STATUS,Pressure Build-Up Pump B Running,Status,BOOL,0,1,-,-,-,-
+XV-409-CMD,Gas Vent to Stack Valve Command,On/Off,BOOL,0,1,-,-,-,-
+XV-410-CMD,Gas Vent Emergency Shutdown Valve Command,On/Off,BOOL,0,1,-,-,-,-
+HC-410,Vent ESD Valve Manual Controller,Status,BOOL,0,1,-,-,-,-
+FA-411,Vent Line Flame Arrestor,Device,N/A,N/A,N/A,-,-,-,-
+HV-1,PBU Outlet Isolation,Status,BOOL,0,1,-,-,-,-
+HV-3,LNG Outlet Isolation,Status,BOOL,0,1,-,-,-,-
+HV-5,LNG Fill Isolation,Status,BOOL,0,1,-,-,-,-
+HV-7,LIT Bottom Isolation,Status,BOOL,0,1,-,-,-,-
+HV-8,LIT Top Isolation,Status,BOOL,0,1,-,-,-,-
+HV-9,Vent Line Upstream Isolation,Status,BOOL,0,1,-,-,-,-
+HV-10,Vent Line Downstream Isolation,Status,BOOL,0,1,-,-,-,-
+HV-11,Fill Line Isolation,Status,BOOL,0,1,-,-,-,-
+HV-12,Tank Sump Drain,Status,BOOL,0,1,-,-,-,-
+HV-13,Tank Bottom Drain,Status,BOOL,0,1,-,-,-,-
+HV-14,DPT Bottom Isolation,Status,BOOL,0,1,-,-,-,-
+HV-15,DPT Top Isolation,Status,BOOL,0,1,-,-,-,-
+PIC-501,Unloading Pressure Control,barg,REAL,2,15,-,-,12,-
+PI-501,Unloading Pressure Indicator,barg,REAL,0,20,-,-,-,-
+TI-502,Unloading Temperature Indicator,degC,REAL,-50,50,-,-,-,-
+XV-503-CMD,Unloading ESD Valve Command,On/Off,BOOL,0,1,-,-,-,-
+HC-503,Unloading ESD Manual Controller,Status,BOOL,0,1,-,-,-,-
+P-504A-CMD,Refrigerant Pump A Command,On/Off,BOOL,0,1,-,-,-,-
+P-504A-STATUS,Refrigerant Pump A Running,Status,BOOL,0,1,-,-,-,-
+P-504B-CMD,Refrigerant Pump B Command,On/Off,BOOL,0,1,-,-,-,-
+P-504B-STATUS,Refrigerant Pump B Running,Status,BOOL,0,1,-,-,-,-
+P-504C-CMD,Refrigerant Pump C Command,On/Off,BOOL,0,1,-,-,-,-
+P-504C-STATUS,Refrigerant Pump C Running,Status,BOOL,0,1,-,-,-,-
+K-505-CMD,Vapor Return Compressor Command,On/Off,BOOL,0,1,-,-,-,-
+K-505-STATUS,Vapor Return Compressor Running,Status,BOOL,0,1,-,-,-,-
+PSV-505,Compressor Discharge Safety Valve,Trip,BOOL,0,1,-,-,18,-
+LT-506,Vessel 1 Level Transmitter,%,REAL,0,100,10,15,85,90
+LAH-506,Vessel 1 Level Alarm High,Alarm,BOOL,0,1,-,-,-,-
+LAL-506,Vessel 1 Level Alarm Low,Alarm,BOOL,0,1,-,-,-,-
+PT-507,Vessel 1 Pressure Transmitter,barg,REAL,0,20,-,2,15,18
+PAH-507,Vessel 1 Pressure Alarm High,Alarm,BOOL,0,1,-,-,-,-
+PAL-507,Vessel 1 Pressure Alarm Low,Alarm,BOOL,0,1,-,-,-,-
+XV-508-CMD,Vessel 1 Liquid Inlet Valve Command,On/Off,BOOL,0,1,-,-,-,-
+XV-509-CMD,Vessel 1 Vapor Outlet Valve Command,On/Off,BOOL,0,1,-,-,-,-
+PSV-510,Vessel 1 Pressure Safety Valve,Trip,BOOL,0,1,-,-,19,-
+LT-511,Vessel 2 Level Transmitter,%,REAL,0,100,10,15,85,90
+LAH-511,Vessel 2 Level Alarm High,Alarm,BOOL,0,1,-,-,-,-
+LAL-511,Vessel 2 Level Alarm Low,Alarm,BOOL,0,1,-,-,-,-
+PT-512,Vessel 2 Pressure Transmitter,barg,REAL,0,20,-,2,15,18
+PAH-512,Vessel 2 Pressure Alarm High,Alarm,BOOL,0,1,-,-,-,-
+PAL-512,Vessel 2 Pressure Alarm Low,Alarm,BOOL,0,1,-,-,-,-
+XV-513-CMD,Vessel 2 Liquid Inlet Valve Command,On/Off,BOOL,0,1,-,-,-,-
+XV-514-CMD,Vessel 2 Vapor Outlet Valve Command,On/Off,BOOL,0,1,-,-,-,-
+PSV-515,Vessel 2 Pressure Safety Valve,Trip,BOOL,0,1,-,-,19,-
+LT-516,Vessel 3 Level Transmitter,%,REAL,0,100,10,15,85,90
+LAH-516,Vessel 3 Level Alarm High,Alarm,BOOL,0,1,-,-,-,-
+LAL-516,Vessel 3 Level Alarm Low,Alarm,BOOL,0,1,-,-,-,-
+PT-517,Vessel 3 Pressure Transmitter,barg,REAL,0,20,-,2,15,18
+PAH-517,Vessel 3 Pressure Alarm High,Alarm,BOOL,0,1,-,-,-,-
+PAL-517,Vessel 3 Pressure Alarm Low,Alarm,BOOL,0,1,-,-,-,-
+XV-518-CMD,Vessel 3 Liquid Inlet Valve Command,On/Off,BOOL,0,1,-,-,-,-
+XV-519-CMD,Vessel 3 Vapor Outlet Valve Command,On/Off,BOOL,0,1,-,-,-,-
+PSV-520,Vessel 3 Pressure Safety Valve,Trip,BOOL,0,1,-,-,19,-
+FT-521,Liquid to Degassing Flow Transmitter,m3/hr,REAL,0,100,-,-,-,-
+TT-522,Degassing Inlet Temperature,degC,REAL,-50,50,-,-,-,-
+PT-523,Degassing Inlet Pressure,barg,REAL,0,20,-,-,-,-
+P-601-CMD,Feedstock Pump Command,On/Off,BOOL,0,1,-,-,-,-
+P-601-STATUS,Feedstock Pump Running Status,Status,BOOL,0,1,-,-,-,-
+HS-601,Feedstock Pump Hand Switch,Status,BOOL,0,1,-,-,-,-
+FT-601,Feedstock Flow Transmitter,m3/hr,REAL,0,150,-,-,-,-
+FIC-601,Feedstock Flow Indicator Controller,m3/hr,REAL,0,150,-,-,-,-
+FCV-601,Feedstock Flow Control Valve,%,REAL,0,100,-,-,-,-
+TT-602,Hot Feedstock Outlet Temperature,degC,REAL,50,150,55,60,140,145
+TIRC-602,Outlet Temp Indicating Recording Controller,degC,REAL,50,150,-,-,-,-
+TAL-602,Outlet Temperature Alarm Low,Alarm,BOOL,0,1,-,-,-,-
+TAH-602,Outlet Temperature Alarm High,Alarm,BOOL,0,1,-,-,-,-
+TALL-602,Outlet Temperature Alarm Low-Low,Alarm,BOOL,0,1,-,-,-,-
+TAHH-602,Outlet Temperature Alarm High-High,Alarm,BOOL,0,1,-,-,-,-
+TCV-602,Steam Inlet Control Valve,%,REAL,0,100,-,-,-,-
+PT-602,Heat Exchanger Shell Pressure,barg,REAL,0,10,-,-,-,-
+PI-602,Heat Exchanger Shell Pressure Indicator,barg,REAL,0,10,-,-,-,-
+PT-603,Steam Supply Pressure Transmitter,barg,REAL,0,10,1,2,8,9
+PI-603,Steam Supply Pressure Indicator,barg,REAL,0,10,-,-,-,-
+PAL-603,Steam Supply Pressure Alarm Low,Alarm,BOOL,0,1,-,-,-,-
+PAH-603,Steam Supply Pressure Alarm High,Alarm,BOOL,0,1,-,-,-,-
+TT-603,Steam Supply Temperature Transmitter,degC,REAL,100,200,-,-,-,-
+TI-603,Steam Supply Temperature Indicator,degC,REAL,100,200,-,-,-,-
+FT-603,Steam Flow Transmitter,kg/hr,REAL,0,1000,-,-,-,-
+FR-603,Steam Flow Recorder,kg/hr,REAL,0,1000,-,-,-,-
+HV-602,Steam Manual Isolation Valve,Status,BOOL,0,1,-,-,-,-
+FT-720,Column Feed Flow Transmitter,m3/hr,REAL,0,100,-,-,-,-
+FFC-721,Feed/Steam Ratio Controller,Ratio,REAL,0.5,2,-,-,-,-
+FY-721,Feed/Steam Ratio Calculation,Ratio,REAL,0.5,2,-,-,-,-
+FC-721,Feed Flow Controller,m3/hr,REAL,0,100,-,-,-,-
+FT-721,Feed Flow to Controller Transmitter,m3/hr,REAL,0,100,-,-,-,-
+FV-721,Feed Control Valve,%,REAL,0,100,-,-,-,-
+FC-722,Overhead Distillate Flow Controller,m3/hr,REAL,0,50,-,-,-,-
+FFC-722,Distillate Flow Ratio Controller,Ratio,REAL,0.2,1,-,-,-,-
+FT-722,Overhead Distillate Flow Transmitter,m3/hr,REAL,0,50,-,-,-,-
+FV-722,Overhead Distillate Control Valve,%,REAL,0,50,-,-,-,-
+AC-723,Overhead Composition Controller,%,REAL,95,100,-,98,99.5,-
+AT-723,Overhead Composition Analyzer,%,REAL,95,100,-,-,-,-
+LC-724,Accumulator Level Controller,%,REAL,0,100,-,-,-,-
+LT-724,Accumulator Level Transmitter,%,REAL,0,100,10,15,85,90
+LAL-724,Accumulator Level Alarm Low,Alarm,BOOL,0,1,-,-,-,-
+LAH-724,Accumulator Level Alarm High,Alarm,BOOL,0,1,-,-,-,-
+FC-724,Reflux Flow Controller,m3/hr,REAL,0,80,-,-,-,-
+FT-724,Reflux Flow Transmitter,m3/hr,REAL,0,80,-,-,-,-
+FV-724,Reflux Control Valve,%,REAL,0,80,-,-,-,-
+PV-725,Accumulator Vent Valve,%,REAL,0,100,-,-,-,-
+PC-726,Column Pressure Controller,barg,REAL,0,5,-,0.5,2.5,3
+PT-726,Column Pressure Transmitter,barg,REAL,0,5,-,-,-,-
+PAH-726,Column Pressure Alarm High,Alarm,BOOL,0,1,-,-,-,-
+LC-727,Column Bottoms Level Controller,%,REAL,0,100,-,-,-,-
+LT-727,Column Bottoms Level Transmitter,%,REAL,0,100,5,10,85,90
+LAL-727,Column Bottoms Level Alarm Low,Alarm,BOOL,0,1,-,-,-,-
+LAH-727,Column Bottoms Level Alarm High,Alarm,BOOL,0,1,-,-,-,-
+FC-728,Bottoms Flow Controller,m3/hr,REAL,0,50,-,-,-,-
+FT-728,Bottoms Flow Transmitter,m3/hr,REAL,0,50,-,-,-,-
+FV-728,Bottoms Control Valve,%,REAL,0,50,-,-,-,-
+PI-803,Fill Hose Pressure Indicator,barg,REAL,0,250,-,-,-,-
+HV-801,Fill Valve,Status,BOOL,0,1,-,-,-,-
+HV-802,Fill Stand Vent Valve,Status,BOOL,0,1,-,-,-,-
+CV-804,Fill Stand Check Valve,Device,N/A,N/A,N/A,-,-,-,-
+PI-806,High Pressure Storage System Pressure,barg,REAL,0,250,120,138,193,200
+PAL-806,HP Storage Pressure Alarm Low,Alarm,BOOL,0,1,-,-,-,-
+PAH-806,HP Storage Pressure Alarm High,Alarm,BOOL,0,1,-,-,-,-
+HV-805,Storage Isolation Valve,Status,BOOL,0,1,-,-,-,-
+HV-807,HP Vent Stack Isolation,Status,BOOL,0,1,-,-,-,-
+PCV-812,User Supply Pressure Control Valve,%,REAL,0,100,-,-,-,-
+PI-811,Regulator Manifold Supply Pressure,barg,REAL,0,250,-,-,-,-
+PI-813,User Supply Pressure Indicator,barg,REAL,0,20,-,-,-,-
+HV-810,Regulator Manifold Supply Isolation,Status,BOOL,0,1,-,-,-,-
+HV-814,Regulator Manifold Exit Isolation,Status,BOOL,0,1,-,-,-,-
+HV-815,Purge Valve to Vent Gas,Status,BOOL,0,1,-,-,-,-
+CV-817,User Line Backflow Prevention,Device,N/A,N/A,N/A,-,-,-,-
+HV-818,System Purge or Vent Valve,Status,BOOL,0,1,-,-,-,-
+HV-819,User Line Isolation Valve,Status,BOOL,0,1,-,-,-,-
+PRD-816,User Line Safety Relief Device,Trip,BOOL,0,1,-,-,15,-
+PRD-820,User Line Relief Valve,Trip,BOOL,0,1,-,-,16,-
+EFV-821,User Excess Flow Valve (Emergency Shutdown),Trip,BOOL,0,1,-,-,-,-
+SMR-830-STATUS,SMR Unit Mode (0=Off, 1=Startup, 2=Run, 3=Shutdown, 4=Trip),State,REAL,0,4
+FT-831,SMR Natural Gas Feed Flow,m3/hr,REAL,0,200,-,-,-,-
+FCV-831,SMR Natural Gas Feed Control Valve,%,REAL,0,100,-,-,-,-
+FT-832,SMR Steam Feed Flow,kg/hr,REAL,0,500,-,-,-,-
+FCV-832,SMR Steam Feed Control Valve,%,REAL,0,100,-,-,-,-
+TT-833,SMR Reactor Temperature,degC,REAL,700,1000,750,800,950,975
+TAL-833,SMR Reactor Temperature Low Alarm,Alarm,BOOL,0,1,-,-,-,-
+TAH-833,SMR Reactor Temperature High Alarm,Alarm,BOOL,0,1,-,-,-,-
+PT-833,SMR Reactor Pressure,barg,REAL,15,30,18,20,28,29
+PAL-833,SMR Reactor Pressure Low Alarm,Alarm,BOOL,0,1,-,-,-,-
+PAH-833,SMR Reactor Pressure High Alarm,Alarm,BOOL,0,1,-,-,-,-
+AT-834,SMR Product H2 Purity,%,REAL,90,100,-,99.5,99.9,-
+AAL-834,SMR Product H2 Purity Low Alarm,Alarm,BOOL,0,1,-,-,-,-
+FT-835,SMR Product H2 Outlet Flow,kg/hr,REAL,0,100,-,-,-,-
+PT-901,H2 Supply Pressure Transmitter,barg,REAL,0,20,2,5,15,18
+PAL-901,H2 Supply Pressure Alarm Low,Alarm,BOOL,0,1,-,-,-,-
+PAH-901,H2 Supply Pressure Alarm High,Alarm,BOOL,0,1,-,-,-,-
+FT-902,H2 Supply Flow Transmitter,kg/hr,REAL,0,50,-,-,-,-
+TT-903,H2 Supply Temperature Transmitter,degC,REAL,0,80,-,-,-,-
+P-910A-CMD,BOP 1 Circulation Pump A Command,On/Off,BOOL,0,1,-,-,-,-
+P-910A-STATUS,BOP 1 Circulation Pump A Running,Status,BOOL,0,1,-,-,-,-
+P-910B-CMD,BOP 1 Circulation Pump B Command,On/Off,BOOL,0,1,-,-,-,-
+P-910B-STATUS,BOP 1 Circulation Pump B Running,Status,BOOL,0,1,-,-,-,-
+K-911-CMD,BOP 1 H2 Compressor Command,On/Off,BOOL,0,1,-,-,-,-
+K-911-STATUS,BOP 1 H2 Compressor Running,Status,BOOL,0,1,-,-,-,-
+TT-912,BOP 1 Cooling Water Inlet Temp,degC,REAL,10,40,-,-,-,-
+TT-913,BOP 1 Cooling Water Outlet Temp,degC,REAL,10,80,-,-,70,75
+TAH-913,BOP 1 Cooling Water Outlet Temp High,Alarm,BOOL,0,1,-,-,-,-
+LT-914,BOP 1 Lye Tank Level,%,REAL,0,100,15,20,80,85
+LAL-914,BOP 1 Lye Tank Level Low,Alarm,BOOL,0,1,-,-,-,-
+LAH-914,BOP 1 Lye Tank Level High,Alarm,BOOL,0,1,-,-,-,-
+E-920-MW,Total System Active Power Output,MW,REAL,0,60,-,-,-,-
+E-920-MVAR,Total System Reactive Power Output,MVAR,REAL,-10,10,-,-,-,-
+E-920-V,Grid Voltage (230kV),kV,REAL,220,240,225,228,232,235
+E-920-A,Grid Current,A,REAL,0,200,-,-,-,-
+E-921-01-MW,Group 1 Active Power,MW,REAL,0,2.5,-,-,-,-
+E-921-01-MVAR,Group 1 Reactive Power,MVAR,REAL,-0.5,0.5,-,-,-,-
+E-921-01-VDC,Group 1 DC Voltage,VDC,REAL,600,700,610,620,680,690
+E-921-01-ADC,Group 1 DC Current,A,REAL,0,4000,-,-,-,-
+E-921-01-STATUS,Group 1 Status (Online/Offline),State,BOOL,0,1,-,-,-,-
+XV-930-CMD,O2 Vent Solenoid Valve Command,On/Off,BOOL,0,1,-,-,-,-
+XV-931-CMD,H2 Vent Pressure Relief Valve Command,On/Off,BOOL,0,1,-,-,-,-
+SYS-100-E-LOAD,Control System & Instrumentation Load,kW,REAL,0,50,-,-,-,-
+P-201A-KW,Amine Circulation Pump A Power,kW,REAL,0,500,-,-,-,-
+P-201B-KW,Amine Circulation Pump B Power,kW,REAL,0,500,-,-,-,-
+FAN-202-KW,Solvent Cooler Fan Power,kW,REAL,0,150,-,-,-,-
+P-301A-KW,Glycol Circulation Pump A Power,kW,REAL,0,400,-,-,-,-
+P-301B-KW,Glycol Circulation Pump B Power,kW,REAL,0,400,-,-,-,-
+K-351A-KW,Propane Compressor A Power,kW,REAL,0,25000,-,-,-,-
+K-351B-KW,Propane Compressor B Power,kW,REAL,0,25000,-,-,-,-
+K-352A-KW,Mixed Refrigerant Compressor A Power,kW,REAL,0,35000,-,-,-,-
+K-352B-KW,Mixed Refrigerant Compressor B Power,kW,REAL,0,35000,-,-,-,-
+P-408A-KW,Pressure Build-Up Pump A Power,kW,REAL,0,300,-,-,-,-
+P-408B-KW,Pressure Build-Up Pump B Power,kW,REAL,0,300,-,-,-,-
+P-504A-KW,Refrigerant Pump A Power,kW,REAL,0,250,-,-,-,-
+P-504B-KW,Refrigerant Pump B Power,kW,REAL,0,250,-,-,-,-
+P-504C-KW,Refrigerant Pump C Power,kW,REAL,0,250,-,-,-,-
+K-505-KW,Vapor Return Compressor Power,kW,REAL,0,750,-,-,-,-
+P-601-KW,Feedstock Pump Power,kW,REAL,0,200,-,-,-,-
+P-724-KW,Reflux Pump Power,kW,REAL,0,350,-,-,-,-
+P-728-KW,Bottoms Pump Power,kW,REAL,0,300,-,-,-,-
+SMR-830-E-LOAD,SMR Unit Electrical Load (Heaters/Controls),kW,REAL,0,2000,-,-,-,-
+P-910A-KW,BOP 1 Circulation Pump A Power,kW,REAL,0,150,-,-,-,-
+P-910B-KW,BOP 1 Circulation Pump B Power,kW,REAL,0,150,-,-,-,-
+K-911-KW,BOP 1 H2 Compressor Power,kW,REAL,0,400,-,-,-,-
+P-915A-KW,BOP 2 Circulation Pump A Power,kW,REAL,0,150,-,-,-,-
+P-915B-KW,BOP 2 Circulation Pump B Power,kW,REAL,0,150,-,-,-,-
+K-916-KW,BOP 2 H2 Compressor Power,kW,REAL,0,400,-,-,-,-

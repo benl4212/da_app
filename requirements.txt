@@ -55,6 +55,7 @@ pycparser==2.22
 pydeck==0.9.1
 PyJWT==2.10.1
 pymdown-extensions==10.16
+pyModbusTCP==0.3.0
 pyopencl==2025.2.5
 pyOpenSSL==25.1.0
 pyparsing==3.2.3
