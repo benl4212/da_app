@@ -1,61 +1,55 @@
-# da_app by benl4212
-## Details - this project was started July, 2025 and hopes to find a general solution to analyzing power grid data, by allowing customized features to be extracted from the data.
+# da_app by benl4212 | Project Plan: Simulated LNG Train Control & Monitoring System
 
-	    Currently supported: POWER DATA SCHEMAS
+**Version 1.3 | Start Date: July 20, 2025 | Last update: July 29, 2025**
 
-    1.    ACTIVISg10k_renewable_time_series_MW
-        | Date | Time | Num Renewable | Total solar Gen | Total wind Gen | Gen 10691 #1 Max MW - Gen 77289 #1 Max MW | 10760 - 80100
+Version (1.1) reflects key tooling and workflow adjustments based on initial development and testing, ensuring a more efficient and practical path to completion.
 
-    2.    ACTIVISg2000_load_time_series_MVAR
-        | Date | Time | Num Load | Total MW Load | Total Mvar Load | Bus 1001 #1 MVAR - Bus 8160 #1 MVAR
+Version (1.2) incorporates a new Instrument Health Monitoring feature, adding a layer of predictive maintenance simulation to the project scope.
 
-    3.    ACTIVISg2000_load_time_series_MW
-        | Date | Time | Num Load | Total MW Load | Total Mvar Load | Bus 1001 #1 MW - Bus 8160 #1 MW
+This version (1.3) refines the project timeline for a more logical workflow and clarifies the task numbering for better tracking.
+# 1 . Project Overview & Key Objectives
+This document outlines the plan for the design, development, and implementation of a simulated Liquefied Natural Gas (LNG) train control and monitoring system. My primary objective of this project is to learn and demonstrate a wide range of in-demand skills in industrial automation, control systems, data engineering, and machine learning.
+This project is designed to be completed within an aggressive 4-5 week timeline.
+## Key Objectives:
+* Demonstrate End-to-End System Integration: Integrate edge computing (Raspberry Pi), cloud services (Linode VM, Cloudflare), a web-based UI (Streamlit), and simulated industrial hardware (PLC).
+* Showcase Control Systems Knowledge: Design and simulate both Basic Process Control System (BPCS) and Safety Instrumented System (SIS) logic.
+* Apply Data & ML in an Industrial Context: Generate realistic sensor data, build a data historian, and apply machine learning for anomaly detection.
+* Develop a Professional HMI: Create a user-friendly Human-Machine Interface (HMI) for monitoring and controlling the simulated process.
+* Produce Engineering Design Documents: Create standard industry documents, including a P&ID, tag database, and control panel layout.
+# 2. Scope & Deliverables
+This project encompasses the creation of a multi-component system that simulates the operation and control of an LNG train.
+### In Scope:
+* All hardware and software setup required for simulation.
+* Development of custom scripts for data generation and communication.
+* Design of control logic and engineering diagrams using free software.
+* End-to-end testing of the integrated system.
+### Out of Scope:
+* Purchase of any physical industrial hardware (e.g., physical PLCs, sensors).
+* Deployment to a production environment.
+* Advanced cybersecurity measures beyond the use of Cloudflare Tunnel.
+## Deliverables:
 
-    4.    ACTIVISg2000_renewable_time_series_MW
-        | Date | Time | Num Renewable | Total solar Gen | Total wind Gen | Gen 1011 #1 MW - Gen 5399 #1 MW
+* Simulated SCADA/Historian System (on Raspberry Pi 5):
+	* A Python-based Modbus TCP server to simulate field device communications.
+	* Scripts generating realistic, time-series sensor data (pressure, temp, flow) with trends and anomalies.
+	* A lightweight data historian using SQLite for storing time-series data and system tags.
 
-    5.    ACTIVSg10k_load_time_series_MVAR
-        | Date | Time | Num Load | Total MW Load | Total Mvar Load | Bus 10001 #1 MVAR - Bus 80084 #1 MVAR
+* Enhanced Streamlit Web Application:
+  	* Data Dashboard: Visualizing real-time and historical sensor data with interactive plots.
+	* ML Dashboard: Displaying anomaly detection results (e.g., F1 scores, PCA, heatmaps).
+	* Interactive HMI/Control Page: A graphical overview of the LNG train with on/off controls, real-time sensor readouts, and visual alarms triggered by the ML model.
+	* Instrument Health Dashboard: A dedicated page to monitor the health status of all 100+ instruments, with a summary integrated into the main alarm view
 
-    6.    ACTIVSg10k_load_time_series_MW
-        | Date | Time | Num Load | Total MW Load | Total Mvar Load | Bus 10001 #1 MW - Bus 80084 #1 MW
+* PLC Program Design (Simulated):
+	* BPCS Logic: Ladder logic for routine process control and operator alarms.
+	* SIS Logic: Ladder logic for critical safety interlocks that act independently to bring the process to a safe state.
+	* Implementation will be done in CODESYS
 
-        
-    - Basic Features: 
-        * Rolling window variance + standard deviation + sum
-        * Rolling window sample entropy + approximate entropy
-                
-    - TSFRESH Features (Top 3 for each model generated by tsfresh_top_features.py)
-        model       rank    feature
-        IF          1,      value__quantile__q_0.1
-                    2,      value__quantile__q_0.2 
-                    3,      value__cwt_coefficients__coeff_11__w_5__widths_(2, 5, 10, 20) 
-        OCSVM       1,      value__quantile__q_0.1 
-                    2,      value__quantile__q_0.4 
-                    3,      value__quantile__q_0.2 
-        LOF         1,      value__fft_coefficient__attr_""imag""__coeff_52
-                    2,      value__change_quantiles__f_agg_""mean""__isabs_False__qh_0.2__ql_0.0
-                    3,      value__quantile__q_0.4
-        
-    - Frequency Domain Analysis        
-        * Rolling Window FFT
-        * Lomb-Scargle Periodgram (GPU accelerated) w/ power spectral density
-        
-    - Advanced Analysis
-        * Continous Wavelet Transform
-        * Lyapunov Exponents & Fractal Dimension
-        * Recurrence Quantification Analysis (RQA) w/ determinism and laminarity
+* Power System Design & Simulation:
+  	* Conceptual design of a power system for the LNG train utilizing waste heat recovery and hydrogen (H2) feedback for power generation.
+	* A basic simulation of the power system dynamics using the PyPSA Python library.
 
-
-# Usage
-You can run this app in a docker container by downloading docker desktop for your device: 
-https://www.docker.com/products/docker-desktop/
-
-then open a terminal and use 
-```bash
-docker run -d -p 8501:8501 benl4212/grid-data-app:latest
-```
-# Future plans
-* Trying to figure out gpu acceleration on a raspberry pi 5 to allow remote inference
-* More genres than just power grid data e.g. network traffic (tcp/ip packet headers), instrumentation/sensor data, modbus 
+* Engineering Design Documentation:
+  	* A Piping & Instrumentation Diagram (P&ID) of the chosen subsystems to model.
+	* A structured Tag Database built in SQLite.
+	* A Main Control Panel Layout designed in QElectroTech or FreeCAD, including real-world part numbers sourced from online catalogs.
